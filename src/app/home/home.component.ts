@@ -9,7 +9,6 @@ import {HttpClient} from '@angular/common/http';
 })
 export class HomeComponent implements OnInit {
   adverts: any;
-  advert: Advert;
   constructor(private http: HttpClient) {}
   // tslint:disable-next-line:typedef
   GetAllAdverts() {

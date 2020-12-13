@@ -1,0 +1,12 @@
+<div class="adverts">
+  <div class="pa">
+    <label>Личный кабинет</label>
+    <p>Имя: {{name}}</p>
+    <p>Фамилия: {{surname}}</p>
+    <p>Номер телефона: +7{{phone}}</p>
+    <button class="colored" (click)="onClick()">Выйти</button>
+  </div>
+  <div *ngFor="let advert of adverts">
+    <app-advert [advert] = advert></app-advert>
+  </div>
+</div>

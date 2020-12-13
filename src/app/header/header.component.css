@@ -6,24 +6,11 @@ header{
   align-items: center;
   margin: 0px 0px 70px 0px;
 }
-nav{
+.div{
   width: 1170px;
   margin: auto;
   padding-top: 14px ;
   display: flex;
   flex-direction: row;
-}
-button{
-  margin-left: 780px;
-  padding: 10px 20px;
-  border-style: none;
-  background: #FFFFFF;
-  border-radius: 8px;
-  font-family: Montserrat,  sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  justify-content: space-between;
 }

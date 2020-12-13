@@ -1,0 +1,8 @@
+<form #form="ngForm" (ngSubmit)="sendForm(form)">
+  <p class="title">Вход</p>
+  <input type="text" name="phone" placeholder="Номер телефона (без +7)" ngModel required>
+  <input type="password" name="password" placeholder="Пароль" ngModel required>
+  <button type="submit">Войти</button>
+  <a class="reg" routerLink="reg">Зарегистрироваться</a>
+</form>
+
