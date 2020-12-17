@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {NgForm} from '@angular/forms';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-add-advert',
@@ -8,7 +9,7 @@ import {NgForm} from '@angular/forms';
   styleUrls: ['./add-advert.component.css']
 })
 export class AddAdvertComponent {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, public router: Router) {}
   advert: any = {
     district: '',
     street: '',
@@ -24,6 +25,7 @@ export class AddAdvertComponent {
     this.advert = form.value;
     console.log(this.advert);
     this.CreateAdvert();
+    this.router.navigate(['personal-account']);
   }
   // tslint:disable-next-line:typedef
   CreateAdvert() {

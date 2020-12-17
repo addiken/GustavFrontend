@@ -29,7 +29,7 @@ export class AuthComponent implements OnInit {
     localStorage.setItem('password', this.user.Password);
     if (localStorage.getItem('id')) {
       this.auth.isAuth = true;
-      this.router.navigate(['']);
+      this.router.navigate(['personal-account']);
     }
   }
   // tslint:disable-next-line:typedef

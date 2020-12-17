@@ -4,9 +4,9 @@
     <p>Имя: {{name}}</p>
     <p>Фамилия: {{surname}}</p>
     <p>Номер телефона: +7{{phone}}</p>
-    <button class="colored" (click)="onClick()">Выйти</button>
+    <form (ngSubmit)="onClick()"><button class="colored">Выйти</button></form>
   </div>
   <div *ngFor="let advert of adverts">
-    <app-advert [advert] = advert></app-advert>
+    <app-advert-pa [advert] = advert></app-advert-pa>
   </div>
 </div>

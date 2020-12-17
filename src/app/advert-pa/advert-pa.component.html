@@ -1,0 +1,18 @@
+<div class="advert">
+  <div class="image"></div>
+  <div class="desc" [routerLink]="['bigAdvert', advert.Id]">
+    <p>{{advert.Rooms}}-комн. квартира,
+      {{advert.Area}}м²,
+      {{advert.Floor}} этаж.</p>
+  </div>
+  <div class="adress">
+    <p>{{advert.District}} р-н,
+      ул. {{advert.Street}},
+      д. {{advert.HouseNumber}}</p>
+  </div>
+  <p class="price">{{advert.Price}} ₽</p>
+  <form (ngSubmit)="DeleteAdvert()"><button class="colored">Удалить</button></form>
+  <form (ngSubmit)="UpdateAdvert()"><button class="colored">Редактировать</button></form>
+</div>
+
+

@@ -12,6 +12,8 @@ import { BigAdvertComponent } from './big-advert/big-advert.component';
 import { AuthComponent } from './auth/auth.component';
 import { RegComponent } from './reg/reg.component';
 import { PersonalAccountComponent } from './personal-account/personal-account.component';
+import { AdvertPaComponent } from './advert-pa/advert-pa.component';
+import { UpdateAdvertComponent } from './update-advert/update-advert.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
@@ -20,7 +22,8 @@ const appRoutes: Routes = [
   {path: 'auth', component: AuthComponent},
   {path: 'auth/reg', component: RegComponent},
   {path: 'personal-account', component: PersonalAccountComponent},
-  {path: 'personal-account/bigAdvert/:id', component: BigAdvertComponent}
+  {path: 'personal-account/bigAdvert/:id', component: BigAdvertComponent},
+  {path: 'personal-account/update-advert/:id', component: UpdateAdvertComponent}
 ];
 
 @NgModule({
@@ -33,7 +36,11 @@ const appRoutes: Routes = [
     BigAdvertComponent,
     AuthComponent,
     RegComponent,
-    PersonalAccountComponent],
+    PersonalAccountComponent,
+    AdvertPaComponent,
+    AdvertPaComponent,
+    UpdateAdvertComponent
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,

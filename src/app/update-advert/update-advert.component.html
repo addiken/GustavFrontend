@@ -1,0 +1,11 @@
+<form #form="ngForm" (ngSubmit)="sendForm(form)">
+  <input type="text" [value]="advertClass.District" placeholder="Район" name="district" ngModel required>
+  <input type="text" [value]="advertClass.Street" placeholder="Улица" name="street" ngModel required>
+  <input type="text" [value]="advertClass.HouseNumber" placeholder="Дом" name="houseNumber" ngModel required>
+  <input type="text" [value]="advertClass.Area" placeholder="Площадь, м2" name="area" ngModel required>
+  <input type="text" [value]="advertClass.Floor" placeholder="Этаж" name="floor" ngModel required>
+  <input type="text" [value]="advertClass.Rooms" placeholder="Комнаты" name="rooms" ngModel required>
+  <textarea type="text" [value]="advertClass.Description" placeholder="Описание" name="description" ngModel required></textarea>
+  <input type="text" [value]="advertClass.Price" placeholder="Цена" name="price" ngModel required>
+  <button type="submit">Сохранить изменения</button>
+</form>
